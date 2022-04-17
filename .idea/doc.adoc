@@ -1,0 +1,41 @@
+= SYT NOST PRÜFUNG
+David Thaller
+17.04.2022
+:sectnums:
+:toc:
+
+== CLD
+[plantuml]
+----
+include::uml.puml[uml]
+----
+
+
+== GIT
+=== Fragen
+. Welche Branches benötigen Sie? Erklären Sie kurz warum?
+* Man benötigt Branches für jede Klasse und Änderung. +
+  Zum Beispiel wird ein Branch namens "feature/werk" benötigt, um die Klasse "Werk" zu implementieren. +
+  Im Allgemeinen braucht man Branches für das Implementieren von neuen Features, deshalb werden Branches
+  "feature/featureName" genannt.
+
+    git checkout main
+    git merge feature/werk
+    git push
+
+
+
+. Wann müssen sie einen Stash erstellen?
+* Ich muss ein Stash erstellen, wenn ich in einen Merge Konflikt gerate. +
+  Durch `git stash` verstecke ich meine Änderungen und hole mir die Änderungen von dem remote Repository,
+  somit kann man sich anderen Aufgaben widmen und die Änderungen später aufspielen
+
+
+
+
+
+
+. Welchen Zweck erfüllt eine Staging Area?
+* Staging Area = Vorbeireitungsraum
+* Auf die Staging Area bereitet man die Files von der Working Copy zum committen vor -> ``git add . ``-> ``git commit "message" ``
+* Es kann bestimmt werden, welche Files auf das remote repo committed werden soll

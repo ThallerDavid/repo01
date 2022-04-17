@@ -1,0 +1,26 @@
+@startuml
+class Werk{
+{static} werkId: int
+entlenungsDatum: DateTime
+}
+
+class Buch{}
+class Zeitschrift{}
+
+class Kunde{
+ {static}Id: int
+}
+
+Buch --|> Werk
+Zeitschrift --|> Werk
+
+Werk "*" -- "*" Kunde
+
+(Werk, Kunde) .. Buchungh
+
+
+
+
+
+
+@enduml
