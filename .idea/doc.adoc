@@ -37,5 +37,5 @@ include::uml.puml[uml]
 
 . Welchen Zweck erfüllt eine Staging Area?
 * Staging Area = Vorbeireitungsraum
-* Auf die Staging Area bereitet man die Files von der Working Copy zum committen vor -> ``git add . ``-> ``git commit "message" ``
+* Auf die Staging Area bereitet man die Files von der Working Copy zum committen vor -> ``git add . ``-> ``git commit -m "message" ``
 * Es kann bestimmt werden, welche Files auf das remote repo committed werden soll
